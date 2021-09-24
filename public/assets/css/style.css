@@ -1,0 +1,30 @@
+body {
+  background-color: #ccc;
+  height: 100vh;
+  overflow: auto;
+}
+
+.container {
+  margin-left: 8%;
+}
+
+.card-lists {
+  overflow-x: auto;
+}
+
+.button--remove-list {
+  margin-right: .75em;
+}
+
+.tag {
+  margin: 0 .5em;
+}
+
+.label {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#addLabelButton, #modifyLabelButton {
+  margin-top: 1em;
+}

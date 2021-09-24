@@ -1,0 +1,5 @@
+LISTE: nom, position
+CONTIENT, 0N LISTE, 11 CARTE
+CARTE: titre, position, couleur
+POSSEDE, 0N CARTE, 0N LABEL
+LABEL: nom, couleur

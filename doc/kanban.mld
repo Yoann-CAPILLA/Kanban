@@ -1,0 +1,7 @@
+liste (id SERIAL NOT NULL, nom TEXT NOT NULL, position INT NOT NULL, createdAt TIMESTAMPTZ, updatedAt TIMESTAMPTZ)
+
+carte (id SERIAL NOT NULL, titre TEXT NOT NULL, position INT NOT NULL, couleur TEXT NULL, createdAt TIMESTAMPTZ, updatedAt TIMESTAMPTZ, #liste(id) INT NOT NULL)
+
+label (id SERIAL NOT NULL, nom TEXT NOT NULL, couleur TEXT NOT NULL, createdAt TIMESTAMPTZ, updatedAt TIMESTAMPTZ)
+
+carte_possede_label (#carte(id) INT NOT NULL, #label(id) INT NOT NULL, createdAt TIMESTAMPTZ, updatedAt TIMESTAMPTZ)
